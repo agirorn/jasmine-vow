@@ -1,0 +1,2 @@
+ package.json lib spec --npm=dev:exec
+ package.json sort-package-json

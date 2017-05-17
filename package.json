@@ -1,0 +1,49 @@
+{
+  "name": "jasmine-vow",
+  "version": "0.0.0",
+  "description": "A solemn promise to Jasmine (Making jasmine promise testing great again)",
+  "keywords": [
+    "async",
+    "grate",
+    "jasmine",
+    "matchers",
+    "node",
+    "promise",
+    "test",
+    "tests",
+    "unit"
+  ],
+  "homepage": "https://github.com/agirorn/jasmine-vow#readme",
+  "bugs": {
+    "url": "https://github.com/agirorn/jasmine-vow/issues"
+  },
+  "license": "ISC",
+  "author": "Ægir Örn Símonarson <agirorn@gmail.com>",
+  "main": "lib/vow.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agirorn/jasmine-vow.git"
+  },
+  "scripts": {
+    "precommit": "npm run verify",
+    "dev": "yardman",
+    "dev:exec": "clear && npm run verify",
+    "lint": "eslint lib spec",
+    "prepublishOnly": "npm run verify",
+    "prepush": "npm run verify",
+    "test": "jasmine",
+    "verify": "npm run test && npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.3",
+    "jasmine": "^2.6.0",
+    "sort-package-json": "^1.6.1",
+    "yardman": "0.0.4"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
