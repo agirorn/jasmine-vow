@@ -1,6 +1,6 @@
 {
   "name": "jasmine-vow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A solemn promise to Jasmine (Making jasmine promise testing great again)",
   "keywords": [
     "async",
