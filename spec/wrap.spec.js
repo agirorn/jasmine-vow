@@ -1,3 +1,5 @@
+'use strict';
+
 const wrap = require('../lib/wrap.js');
 
 describe('Wrap', () => {
