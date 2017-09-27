@@ -1,3 +1,5 @@
+'use strict';
+
 const vow = require('../');
 
 const orginal = {
@@ -59,4 +61,3 @@ describe('vow', () => {
     it('should be pending');
   });
 });
-
