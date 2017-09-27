@@ -1,4 +1,5 @@
 language: node_js
+script: ci
 node_js:
   - "4"
   - "6"

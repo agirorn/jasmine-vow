@@ -25,6 +25,8 @@
     "url": "https://github.com/agirorn/jasmine-vow.git"
   },
   "scripts": {
+    "ci": "npm run coverage && npm run lint",
+    "coverage": "istanbul cover jasmine && istanbul check-cover",
     "precommit": "npm run verify",
     "dev": "yardman",
     "dev:exec": "clear && npm run verify",
@@ -39,6 +41,7 @@
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
     "husky": "^0.13.3",
+    "istanbul": "^0.4.5",
     "jasmine": "^2.6.0",
     "sort-package-json": "^1.6.1",
     "yardman": "0.0.4"
