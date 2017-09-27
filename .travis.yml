@@ -1,5 +1,5 @@
 language: node_js
-script: ci
+script: npm run ci
 node_js:
   - "4"
   - "6"
