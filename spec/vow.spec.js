@@ -50,6 +50,9 @@ describe('vow', () => {
     });
   });
 
+  it('should not fail test that resolve with a Error', () =>
+    Promise.resolve(new Error('')));
+
   // pending spec should work
   it('should be pending');
   xit('should be pending');
