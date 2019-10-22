@@ -13,15 +13,14 @@ const orginal = {
 vow(jasmine);
 
 describe('vow', () => {
-  const defer = time => new Promise(resolve => setTimeout(resolve, time));
+  const defer = (time) => new Promise((resolve) => setTimeout(resolve, time));
   const delay = (time, cb) => { setTimeout(cb, time); };
 
   describe('it returning a promise', () => {
     let resolved;
     beforeEach(() => { resolved = false; });
 
-    it('accepts returning a promise', () =>
-      defer(0).then(() => { resolved = true; }));
+    it('accepts returning a promise', () => defer(0).then(() => { resolved = true; }));
 
     afterEach(() => expect(resolved).toBeTruthy());
   });
@@ -50,8 +49,7 @@ describe('vow', () => {
     });
   });
 
-  it('should not fail test that resolve with a Error', () =>
-    Promise.resolve(new Error('')));
+  it('should not fail test that resolve with a Error', () => Promise.resolve(new Error('')));
 
   // pending spec should work
   it('should be pending');

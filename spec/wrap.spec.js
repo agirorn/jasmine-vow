@@ -79,7 +79,8 @@ describe('Wrap', () => {
       wrapped('description', 'function', 'timeout');
 
       expect(orginal).toHaveBeenCalledWith(
-        'description', jasmine.any(Function), 'timeout');
+        'description', jasmine.any(Function), 'timeout',
+      );
     });
   });
 
